@@ -43,7 +43,7 @@ export default function Puzzle() {
                 {data &&  <h3>When <b>Contry = {data.client.country}</b> and <b>Year = {data.client.year}</b> what is the <b>Attack Type?</b></h3>}
                 <input type="text" value={input} placeholder='enter answer' onChange={e => setIput(e.target.value)} required />
                 <button type='submit'>Send</button>
-                {answer && <h4>{answer.message}</h4>}
+                {answer && <h4>{answer.message} point = {answer.count}</h4>}
                 <Link to={"/"}> get data </Link>
             </form>
         </>
